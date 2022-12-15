@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<style>
+		.attribute {text-transform: lowercase;}
+		table, th, td {
+			border-style: solid;
+			border-collapse: collapse;
+		}
+		</style>
+	</head>
+	<body>
+		<h2><a href="#commontags">Tags</a><h2>
+		<h2><a href="#commonattributes">Common Attributes</a><h2>
+		<h2><a href="#commonsubtags">Common sub Tags</a><h2>
+		
+		<p id="commontags">
+			<h3>Tags</h3>
+			<table>
+				<tr><td>Tag</td><td>Description</td></tr>
+				<tr><td>&lthero&gt</td><td>Hero that can be picked.</td></tr>
+				<tr><td>&ltcreep&gt</td><td>Use this for anything that moves and does not have attributes.</td></tr>
+				<tr><td>&ltneutral&gt</td><td>Neutral creeps</td></tr>
+				<tr><td>&ltpet&gt</td><td>Persistent</td></tr>
+				<tr><td>&ltgadget&gt</td><td>Use this for anything that does not move and and is not building.</td></tr>
+				<tr><td>&ltbuilding&gt</td><td>Duh</td></tr>
+			</table>
+		</p>
+		
+		<p id="commonattributes">
+			<h3>Common attributes for all unit tags</h3>
+			<table>
+				<tr><td>Attribute</td><td>Description</td><td>Default value if known</td></tr>
+				
+				<tr><td colspan="3">GENERAL</td></tr>
+				<tr><td class="attribute">DisplayName</td><td>Non-translated name</td><td></td></tr>
+				<tr><td class="attribute">Description</td><td>Non-translated desc</td><td></td></tr>
+				<tr><td class="attribute">Icon</td><td>Path to image</td><td></td></tr>
+				<tr><td class="attribute">Portrait</td><td>Path to image</td><td></td></tr>
+				<tr><td class="attribute">MapIconProperty</td><td>Path to image</td><td></td></tr>
+				<tr><td class="attribute">ShowOnMap</td><td>true/false</td><td></td></tr>
+				<tr><td class="attribute">HowerOnMap</td><td>true/false</td><td></td></tr>
+				<tr><td class="attribute">Model</td><td>Path to model</td><td></td></tr>
+				<tr><td class="attribute">PartialControlShare</td><td>true/false is this shared when you share your courier</td><td>false</td></tr>
+
+				<tr><td colspan="3">SOUNDS</td></tr>
+				<tr><td class="attribute">SelectedSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">SelectedFlavorSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">ConfirmMoveSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">ConfirmAttackSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">TauntedSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">TauntKillSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">NoManaSound</td><td>Path to sound</td><td></td></tr>
+				<tr><td class="attribute">CooldownSound</td><td>Path to sound</td><td></td></tr>
+
+				
+				<tr><td colspan="3">EFFECTS</td></tr>
+				<tr><td class="attribute">PassiveEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">SpawnEffect</td><td>Path to effect</td><td></td></tr>
+				
+				
+				<tr><td colspan="3"></td></tr>
+				<tr><td class="attribute">BoundsRadius</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">SelectionRadius</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">IsSelectable</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">IsControllable</td><td>boolean</td><td></td></tr>
+
+				<tr><td class="attribute">NoBlockNeutralSpawn</td><td>boolean</td><td></td></tr>
+				
+				<tr><td class="attribute">MoveSpeed</td><td>number</td><td></td></tr>
+				
+
+				<tr><td colspan="3">HP/MANA</td></tr>
+				<tr><td class="attribute">MaxHealth</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">MaxMana</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">HealthRegen</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ManaRegen</td><td>number</td><td></td></tr>
+				
+				<tr><td colspan="3">GAMEMECHANICS</td></tr>
+				<tr><td class="attribute">CombatType</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">Armor</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">MagicArmor</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">ImmunityType</td><td>See /base.gamemechanics</td><td></td></tr>
+				
+				<tr><td colspan="3"> SKILLS</td></tr>
+				<tr><td class="attribute">Inventory0</td><td>Q</td><td></td></tr>
+				<tr><td class="attribute">Inventory1</td><td>W</td><td></td></tr>
+				<tr><td class="attribute">Inventory2</td><td>E</td><td></td></tr>
+				<tr><td class="attribute">Inventory3</td><td>R</td><td></td></tr>
+				<tr><td class="attribute">Inventory4</td><td>For heroes use Ability_AttributeBoost</td><td></td></tr>
+				<tr><td class="attribute">Inventory5</td><td></td><td></td></tr>
+				<tr><td class="attribute">Inventory6</td><td></td><td></td></tr>
+				<tr><td class="attribute">Inventory7</td><td></td><td></td></tr>
+				<tr><td class="attribute">Inventory8</td><td>For heroes use Ability_Taunt</td><td></td></tr>
+				<tr><td class="attribute">Inventory9</td><td></td><td></td></tr>
+				<tr><td class="attribute">Inventory10</td><td></td><td></td></tr>
+				<tr><td class="attribute">Inventory11</td><td>For heroes use Ability_Dance</td><td></td></tr>
+				<tr><td class="attribute">Inventory12</td><td>For heroes use Ability_AutomatedCourier</td><td></td></tr>
+				
+				<tr><td colspan="3">ATTACK</td></tr>
+				<tr><td class="attribute">AttackType</td><td>melee/ranged</td><td></td></tr>
+				<tr><td class="attribute">AttackRange</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackProjectile</td><td>if ranged</td><td></td></tr>
+				<tr><td class="attribute">AttackOffset</td><td>number number number</td><td></td></tr>
+				<tr><td class="attribute">AttackDamageType</td><td>Physical/Magic</td><td>Physical</td></tr>
+				<tr><td class="attribute">AttackDamageMin</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackDamageMax</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackCooldown</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackDuration</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackActionTime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">AttackTargetScheme</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">AttackNonLethal</td><td>boolean</td><td>false</td></tr>
+				<tr><td class="attribute">AttackStartEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">AttackActionEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">AttackSelfActionEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">AttackImpactEffect</td><td>Path to effect</td><td></td></tr>
+				
+				<tr><td colspan="3">INVIS</td></tr>
+				<tr><td class="attribute">RevealType</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">RevealRange</td><td>See /base.gamemechanics</td><td></td></tr>
+				<tr><td class="attribute">StealthType</td><td>See /base.gamemechanics</td><td></td></tr>
+
+				
+				<tr><td colspan="3">BOUNTY (Do not set for heroes meant for normal gamemodes)</td></tr>
+				<tr><td class="attribute">GoldBountyMin</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">GoldBountyMax</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">GoldBountyTeam</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ExperienceBounty</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">GlobalExperience</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">DeadExperience</td><td>number</td><td></td></tr>
+				
+				<tr><td colspan="3">WALKING</td></tr>
+				<tr><td class="attribute">Unitwalking</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">Treewalking</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">Cliffwalking</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">Buildingwalking</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">Flying</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">FlyHeight</td><td>number Flying higher than certain height(128?) lets you see over cliffs and trees</td><td>300</td></tr>
+				
+				<tr><td colspan="3">MISC</td></tr>
+				<tr><td class="attribute">Invulnerable</td><td>boolean</td><td>false</td></tr>
+				<tr><td class="attribute">Deniable</td><td>boolean</td><td>false</td></tr>
+				<tr><td class="attribute">DeniablePercent</td><td></td><td>false</td></tr>
+				<tr><td class="attribute">TrueStrike</td><td>boolean</td><td>false</td></tr>
+				<tr><td class="attribute">ServerEntity</td><td>This will not be shown to clients</td><td></td></tr>
+				
+				<tr><td class="attribute">Lifetime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ShowLifetime</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">ShowLifetimeAll</td><td>boolean</td><td></td></tr>
+			</table>
+		</p>
+		<p id="commonsubtags">
+			<h3>Common tags for all unit tags</h3>
+			<table>
+				<tr><td>Tag</td><td></td><td></td></tr>
+				<tr><td>modifier</td><td>key and modpriority</td><td>If modifier key is active all other content is read as if set for parent tag. In case of conflicts higest priority is used</td></tr>
+				<tr><td>onspawn</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onrespawn</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onframe</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>oninterval</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattack</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackstart</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackpreimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackdamageevent</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackimpactinvalid</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackend</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackedstart</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackedpreimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackedpredamage</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackeddamageevent</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackedpostimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackingpreimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackingpredamage</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackingdamageevent</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onattackingpostimpact</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>ondamage</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>ondamaged</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onheal</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onhealed</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onstunned</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onsmackdowned</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onexpired</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>ondeath</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onkill</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onassist</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onownerrespawn</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+				<tr><td>onconcede</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+			</table>
+		</p>
+	</body>
+</html>
