@@ -11,20 +11,21 @@
 		</style>
 	</head>
 	<body>
-		<h2><a href="#commontags">Tags</a><h2>
+		<h2><a href="#tags">Tags</a><h2>
 		<h2><a href="#commonattributes">Common Attributes</a><h2>
 		<h2><a href="#commonsubtags">Common sub Tags</a><h2>
 		
-		<p id="commontags">
+		<p id="tags">
 			<h3>Tags</h3>
 			<table>
 				<tr><td>Tag</td><td>Description</td></tr>
-				<tr><td>&lthero&gt</td><td>Hero that can be picked.</td></tr>
-				<tr><td>&ltcreep&gt</td><td>Use this for anything that moves and does not have attributes.</td></tr>
-				<tr><td>&ltneutral&gt</td><td>Neutral creeps</td></tr>
-				<tr><td>&ltpet&gt</td><td>Persistent</td></tr>
-				<tr><td>&ltgadget&gt</td><td>Use this for anything that does not move and and is not building.</td></tr>
-				<tr><td>&ltbuilding&gt</td><td>Duh</td></tr>
+				<tr><td><a href="#heroattributes">hero</a></td><td>Hero that can be picked.</td></tr>
+				<tr><td>creep</td><td>Use this for anything that moves and does not have attributes.</td></tr>
+				<tr><td>neutral</td><td>Neutral creeps</td></tr>
+				<tr><td><a href="#petattributes">pet</a></td><td>Persistent</td></tr>
+				<tr><td><a href="#heropetattributes">heropet</a></td><td>Has atributes</td></tr>
+				<tr><td>gadget</td><td>Use this for anything that does not move and and is not building.</td></tr>
+				<tr><td>building</td><td>Duh</td></tr>
 			</table>
 		</p>
 		
@@ -39,9 +40,10 @@
 				<tr><td class="attribute">Icon</td><td>Path to image</td><td></td></tr>
 				<tr><td class="attribute">Portrait</td><td>Path to image</td><td></td></tr>
 				<tr><td class="attribute">MapIconProperty</td><td>Path to image</td><td></td></tr>
-				<tr><td class="attribute">ShowOnMap</td><td>true/false</td><td></td></tr>
-				<tr><td class="attribute">HowerOnMap</td><td>true/false</td><td></td></tr>
+				<tr><td class="attribute">ShowOnMap</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">HowerOnMap</td><td>boolean</td><td></td></tr>
 				<tr><td class="attribute">Model</td><td>Path to model</td><td></td></tr>
+				<tr><td class="attribute">ModelScale</td><td>number</td><td></td></tr>
 				<tr><td class="attribute">PartialControlShare</td><td>true/false is this shared when you share your courier</td><td>false</td></tr>
 
 				<tr><td colspan="3">SOUNDS</td></tr>
@@ -54,10 +56,10 @@
 				<tr><td class="attribute">NoManaSound</td><td>Path to sound</td><td></td></tr>
 				<tr><td class="attribute">CooldownSound</td><td>Path to sound</td><td></td></tr>
 
-				
 				<tr><td colspan="3">EFFECTS</td></tr>
 				<tr><td class="attribute">PassiveEffect</td><td>Path to effect</td><td></td></tr>
 				<tr><td class="attribute">SpawnEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">EffectScale</td><td>number</td><td></td></tr>
 				
 				
 				<tr><td colspan="3"></td></tr>
@@ -69,7 +71,6 @@
 				<tr><td class="attribute">NoBlockNeutralSpawn</td><td>boolean</td><td></td></tr>
 				
 				<tr><td class="attribute">MoveSpeed</td><td>number</td><td></td></tr>
-				
 
 				<tr><td colspan="3">HP/MANA</td></tr>
 				<tr><td class="attribute">MaxHealth</td><td>number</td><td></td></tr>
@@ -148,6 +149,8 @@
 				<tr><td class="attribute">Lifetime</td><td>number</td><td></td></tr>
 				<tr><td class="attribute">ShowLifetime</td><td>boolean</td><td></td></tr>
 				<tr><td class="attribute">ShowLifetimeAll</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">sightrangeday</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">sightrangenight</td><td>number</td><td></td></tr>
 			</table>
 		</p>
 		<p id="commonsubtags">
@@ -187,6 +190,65 @@
 				<tr><td>onassist</td><td><a href="events.html">see events.html</a></td><td></td></tr>
 				<tr><td>onownerrespawn</td><td><a href="events.html">see events.html</a></td><td></td></tr>
 				<tr><td>onconcede</td><td><a href="events.html">see events.html</a></td><td></td></tr>
+			</table>
+		</p>
+		
+		
+		<p id="heroattributes">
+			<h3>Attributes for &lthero&gt tags</h3>
+			<table>
+				<tr><td>Attribute</td><td>Description</td><td>Default value if known</td></tr>
+				
+				<tr><td colspan="3">ATTRIBUTES</td></tr>
+				<tr><td>Strength</td><td>number</td><td></td></tr>
+				<tr><td>Agility</td><td>number</td><td></td></tr>
+				<tr><td>Intelligence</td><td>number</td><td></td></tr>
+				<tr><td>StrengthPerLevel</td><td>number</td><td></td></tr>
+				<tr><td>AgilityPerLevel</td><td>number</td><td></td></tr>
+				<tr><td>IntelligencePerLevel</td><td>number</td><td></td></tr>
+				<tr><td>PrimaryAttribute</td><td>Agility/Strength/Intelligence</td><td></td></tr>
+
+				<tr><td colspan="3">HERO PICK AND INTERFACE</td></tr>
+				<tr><td>AnnouncerSound</td><td>path to sound</td><td></td></tr>
+				<tr><td>Category</td><td></td></tr>
+				<tr><td>Difficulty</td><td>number</td><td></td></tr>
+				<tr><td>SoloRating</td><td>number</td><td></td></tr>
+				<tr><td>JungleRating</td><td>number</td><td></td></tr>
+				<tr><td>CarryRating</td><td>number</td><td></td></tr>
+				<tr><td>SupportRating</td><td>number</td><td></td></tr>
+				<tr><td>InitiatorRating</td><td>number</td><td></td></tr>
+				<tr><td>GankerRating</td><td>number</td><td></td></tr>
+				<tr><td>RangedRating</td><td>number</td><td></td></tr>
+				<tr><td>MeleeRating</td><td>number</td><td></td></tr>
+				<tr><td>PusherRating</td><td>number</td><td></td></tr>
+				<tr><td>NewHero</td><td>boolean</td><td></td></tr>
+				<tr><td>Team</td><td>Legion/Hellbourne</td><td></td></tr>
+				<tr><td colspan="3">MISC</td></tr>
+				<tr><td>RespawnEffect</td><td>path to effect</td><td></td></tr>
+				<tr><td>HideMinimapIcon</td><td>boolean</td><td></td></tr>
+			</table>
+		</p>
+		<p id="petattributes">
+			<h3>Attributes for &ltpet&gt tags</h3>
+			<table>
+				<tr><td>Attribute</td><td>Type</td><td>Description</td></tr>
+				<tr><td>IsPersistent</td><td>boolean</td><td>Tying to spawn new one instead respawns old one if any. See wildsoul</td></tr>
+				<tr><td>Lifetime</td><td>number</td><td></td></tr>
+				<tr><td>HiddenIfOwnerNotVisible</td><td>boolean</td><td></td></tr>
+				<tr><td>InheritVisibilityFromOwner</td><td>boolean</td><td></td></tr>
+			</table>
+		</p>
+		<p id="petattributes">
+			<h3>Attributes for &ltheropet&gt tags in addition to the ones from &ltpet&gt</h3>
+			<table>
+				<tr><td>Attribute</td><td>Type</td><td>Description</td></tr>
+				<tr><td>Strength</td><td>number</td><td></td></tr>
+				<tr><td>Agility</td><td>number</td><td></td></tr>
+				<tr><td>Intelligence</td><td>number</td><td></td></tr>
+				<tr><td>StrengthPerLevel</td><td>number</td><td></td></tr>
+				<tr><td>AgilityPerLevel</td><td>number</td><td></td></tr>
+				<tr><td>IntelligencePerLevel</td><td>number</td><td></td></tr>
+				<tr><td>PrimaryAttribute</td><td>Agility/Strength/Intelligence</td><td></td></tr>
 			</table>
 		</p>
 	</body>
