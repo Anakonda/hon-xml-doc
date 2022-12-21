@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h2><a href="#tags">Tags</a><h2>
+		<h2><a href="#commonattributes">Common Attributes</a><h2>
+		<h2><a href="#commonsubtags">Common sub Tags</a><h2>
+		<p id="tags">
+			<h3>Tags</h3>
+			<table>
+				<tr><td>ability</td><tr>
+				<tr><td>item</td><tr>
+			</table>
+		</p>
+
+		<p id="commonattributes">
+			<h3>Common attributes for all unit tags</h3>
+			<table>
+				<tr><td>Attribute</td><td>Type</td><td></td></tr>
+
+				<tr><td colspan="3">MAIN</td></tr>
+				<tr><td class="attribute">Name</td><td>string</td><td></td></tr>
+				<tr><td class="attribute">MaxLevel</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">BaseLevel</td><td>number</td><td></td></tr>
+
+				<tr><td colspan="3">EFFECTS</td></tr>
+				<tr><td class="attribute">CastEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">ActionEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">SelfActionEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">ImpactEffect</td><td>Path to effect</td><td></td></tr>
+				<tr><td class="attribute">BridgeEffect</td><td>Path to effect</td><td></td></tr>
+
+				<tr><td colspan="3">CASTING</td></tr>
+				<tr><td class="attribute">ActionType</td><td></td><td>single target/area/passive</td></tr>
+				<tr><td class="attribute">TargetScheme</td><td></td><td>See /base.gamemechanics</td></tr>
+				<tr><td class="attribute">IsChanneling</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">ChannelTime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">CooldownTime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ToggleOffCooldownTime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">CooldownOnDamage</td><td>number</td><td></td></tr>
+
+				<tr><td class="attribute">ManaCost</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ToggleOffManaCost</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ActiveManaCost</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">TriggeredManaCost</td><td>number</td><td></td></tr>
+
+				<tr><td class="attribute">AllowOutOfRangeCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">AllowOutOfRangeCastOnPosition</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">AllowOutOfBoundsCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">AllowAutoCast</td><td>boolean</td><td></td></tr>
+
+				<tr><td class="attribute">Range</td><td>number</td><td></td></tr>
+
+				<tr><td class="attribute">CastTime</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">CastActionTime</td><td>number</td><td></td></tr>
+
+				<tr><td colspan="3">INDICATORS</td></tr>
+				<tr><td class="attribute">ShowLineCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">LineCastRange</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">LineCastMaxRange</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">LineCastWidth</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ShowAreaCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">PersistAreaCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">PersistAreaCastBuffer</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">PersistAreaCastColor</td><td>number number number number</td><td></td></tr>
+				<tr><td class="attribute">AreaCastRange</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ShowConeCast</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">ConeCastRange</td><td>number</td><td></td></tr>
+				<tr><td class="attribute">ConeCastWidth</td><td>number</td><td></td></tr>
+
+				<tr><td colspan="3">MISC</td></tr>
+				<tr><td class="attribute">KeepToggleOnWhenDead</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">NonInterrupting</td><td>boolean</td><td></td></tr>
+				<tr><td class="attribute">NonAggressive</td><td>boolean</td><td>If this should not disable striders</td></tr>
+				<tr><td class="attribute">DontSpendManaCost</td><td>boolean</td><td></td></tr>
+
+			</table>
+		</p>
+	</body>
+</html>
